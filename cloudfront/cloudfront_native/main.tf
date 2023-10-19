@@ -1,7 +1,7 @@
 module "cloudfront" {
 source = "../Lib"
 aliases = ["boomi.fun"]
-comment             = "LIVE - Hardcore API"
+comment             = "LIVE - Hardcore NATIVE"
 enabled             = true
 http_version        = "http2"
 is_ipv6_enabled     = true
