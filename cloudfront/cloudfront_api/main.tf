@@ -1,5 +1,5 @@
 module "cloudfront" {
-source = "../lib"
+source = "../Lib"
 aliases = ["boomi.fun"]
 comment             = "LIVE - Hardcore API"
 enabled             = true
