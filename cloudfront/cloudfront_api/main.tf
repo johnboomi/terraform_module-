@@ -140,21 +140,21 @@ origin = {
       origin_shield_region = "us-east-1"
     }
   }
-  prod-cloudfiles-public = { # with origin access identity (legacy)
-    domain_name         = "my-test-bucket-for-terraform.com"
-    connection_attempts = 3
-    connection_timeout  = 10
-    custom_header       = []
-    s3_origin_config = {
-      origin_access_identity = "s3_test_4" # key in `origin_access_identities`
+#  prod-cloudfiles-public = { # with origin access identity (legacy)
+ #   domain_name         = "my-test-bucket-for-terraform.com"
+  #  connection_attempts = 3
+ #   connection_timeout  = 10
+ #   custom_header       = []
+  #  s3_origin_config = {
+  #    origin_access_identity = "s3_test_4" # key in `origin_access_identities`
       # cloudfront_access_identity_path = "origin-access-identity/cloudfront/E5IGQAA1QO48Z" # external OAI resource
-    }
+  #  }
 
-    origin_shield = {
-      enabled              = false
-      origin_shield_region = "us-east-1"
-    }
-  }
+ #   origin_shield = {
+ #     enabled              = false
+  #    origin_shield_region = "us-east-1"
+  #  }
+#  }
   falcon-origin = { # with origin access identity (legacy)
     domain_name = "testboomi.com"
     custom_origin_config = {
